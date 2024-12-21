@@ -23,8 +23,7 @@ public class _01_IntroToStack {
         //    between the two numbers entered by the user, print it to the screen.
     	double inputOne = Double.parseDouble(one);
     	double inputTwo = Double.parseDouble(two);
-    	for (int i = 0; i < dubs.capacity()-1; i++) {
-    		System.out.println(i);
+    	for (int i = 0; i < dubs.size()-1; i++) {
 			double popped = dubs.pop();
 			if (popped >= inputOne && popped <= inputTwo) {
 				System.out.println(popped);
