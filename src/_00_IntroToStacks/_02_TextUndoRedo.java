@@ -1,7 +1,7 @@
 package _00_IntroToStacks;
 
+import java.awt.event.KeyEvent;
 import java.util.Stack;
-
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -24,13 +24,16 @@ public class _02_TextUndoRedo {
      */
 	public static void main(String[] args) {
 		JFrame frame = new JFrame("Text Editor");
+		frame.setSize(400,400);
 		JPanel panel = new JPanel();
 		JLabel label = new JLabel();
 		Stack<Character> deletedChars = new Stack<>();
-		frame.setSize(400,400);
-		frame.add(panel);
-		panel.add(label);
 		frame.addKeyListener(null);
-		
+		//keyPressed(KeyEvent e) {
+			
+		//}
+		panel.add(label);
+		frame.add(panel);
+		frame.setVisible(true);
 	}
 }
