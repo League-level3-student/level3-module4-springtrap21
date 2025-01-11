@@ -10,7 +10,21 @@ public class TestMatchingBrackets {
      * has a matching closing bracket
      */
     public static boolean doBracketsMatch(String b) {
-    	Stack <Characters> brackets = new Stack<>();
-        return false;
+    	Stack <Character> brackets = new Stack<>();
+    	int openBrackets = 0;
+    	int closeBrackets = 0;
+    	for (char character : b.toCharArray()) {
+    		if (character == '[') {
+				openBrackets++;
+			}
+    		else if (openBrackets == 0 && character == ']') {
+				closeBrackets++;
+			}
+			brackets.push(character);			   	
+		}
+    	if (openBrackets == closeBrackets) {
+			return true;
+		}
+		return false; 
     }
 }
