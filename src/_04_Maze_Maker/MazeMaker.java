@@ -23,6 +23,7 @@ public class MazeMaker {
         //    This will be the starting point. Then select a random cell along
         //    the opposite wall and remove its exterior wall. This will be the
         //    finish line.
+        Random rnd = new Random(4);
         
         // 2. select a random cell in the maze to start 
         
@@ -34,7 +35,7 @@ public class MazeMaker {
     // 4. Complete the selectNextPathMethod
     private static void selectNextPath(Cell currentCell) {
         // A. SET currentCell as visited
-
+    	
         // B. check for unvisited neighbors using the cell
 
         // C. if has unvisited neighbors,
