@@ -17,10 +17,11 @@ public class Maze {
         // 3. Iterate through each cell and initialize it
         //    using row and col as the cell location
         for (int row = 0; row < rows; row++) {
-			for (int col = 0; col < cols; col++) {
-				cellArray = new Cell[row][col];
-			}
-		}
+            for (int col = 0; col < cols; col++) {
+                cellArray[row][col] = new Cell(row, col);
+            }
+        }
+
     }
 
     // 4. This method iterates through the cells and draws them
